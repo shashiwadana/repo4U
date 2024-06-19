@@ -3,11 +3,11 @@
     <div class="row justify-content-around">
         <div class="col-10 col-md-8 col-lg-6">
             <div class="card bg-transparent text-center">
-                <h4 class="card-header text-danger">Here are some recomendations just for you!</h4>
+                <h4 class="card-header">Here are some recomendations just for you!</h4>
                 <div class="card-body text-left">
                     {% for suggestion in suggestions %}
                     <ul>
-                        <li><a href="https://github.com/{{ suggestion }}"><strong>{{ suggestion }}</strong></a></li>
+                        <li><a  style="color: black;" href="https://github.com/{{ suggestion }}"><strong>{{ suggestion }}</strong></a></li>
                     </ul>
                     {% endfor %}
                 </div>
