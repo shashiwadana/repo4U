@@ -1,0 +1,16 @@
+{
+    "name": "Python 3.7 Environment",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "ms-python.python",
+        "ms-azuretools.vscode-docker"
+    ],
+    "forwardPorts": [],
+    "postCreateCommand": "pip install pipenv && pipenv install --python 3.7",
+    "remoteUser": "vscode"
+}
